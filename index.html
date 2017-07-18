@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Triit test project by Posokhov</title>
+    <link rel="dns-prefetch" href="">
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <meta property="og:image" content="img/logo.png">
+    
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body{overflow-y: hidden; opacity: 0; background-color: #fff;}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header clearfix">
+            <div class="header__logo">
+                <a href="#" class="brand-logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="header__right-side">
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <i class="nav__list-item-icon small material-icons">dashboard</i>
+                            <a class="nav__list-item-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav__list-item nav__list-item--active">
+                            <i class="nav__list-item-icon small material-icons">flag</i>
+                            <a class="nav__list-item-link" href="#">Соревнования</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <i class="nav__list-item-icon small material-icons">description</i>
+                            <a class="nav__list-item-link" href="#">Отчеты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__user" style="background-image: url(img/user.png)"></div>
+            </div>
+        </header>
+
+        <main>
+
+            <h3 class="title-h3 center-align">Слот за отчёт</h3>
+            <div class="subtitle center-align">Выиграй слот на будущий старт, рассказав о прошедшем</div>
+
+            <div class="info">
+                <div class="info__top clearfix">
+                    <div class="info__top-text">
+                        <p>Каждую неделю мы дарим слот на любой российский старт (почти на любой, условия смотри
+                            <a class="underline-link js-smooth-to" href="#rules">ниже</a>).</p>
+                        <p>Всё, что нужно сделать для этого: получить максимум лайков за свои отчёты на нашем сайте.
+                        Он может быть один или ты опубликуешь сразу несколько, выложишь их сразу или по мере
+                            написания - все это не влияет на результат конкурса.</p>
+                        <p>Выигрывает тот, кто соберет больше лайков с понедельника по воскресенье.</p>
+                    </div>
+                    <div class="info__top-image">
+                        <img src="img/img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="info__btm clearfix">
+                    <div class="info__btm-image">
+                        <img src="img/img-2.png" alt="">
+                    </div>
+                    <div class="info__btm-text">
+                        <div class="subtitle">Пять простых шагов к победе</div>
+
+                        <ol class="info__btm-text-list">
+                            <li class="info__btm-text-list-item">Зарегистрируйся на <a href="http://triit.ru/" target="_blank">triit
+                                .ru</a>, если еще не успел это
+                                сделать. Это просто, а через социальные сети можно зарегистрироваться в один клик.</li>
+                            <li class="info__btm-text-list-item">Отмечайся на соревнованиях, в которых принимал участие,
+                                и вводи результаты. Все они сохранятся в твоем профиле.</li>
+                            <li class="info__btm-text-list-item">Расскажи в отчетах о том, как прошли эти соревнования.
+                                Добавиь фотографии или видео, опиши, с чем ты столкнулся, что понравилось, а что не
+                                очень.</li>
+                            <li class="info__btm-text-list-item">Позови друзей отдать лайк за твои отчеты. Для этого им
+                                тоже надо будет зарегистрироваться, но как ты уже убедился - это быстро и не сложно
+                                .</li>
+                            <li class="info__btm-text-list-item">Собери максимум лайков за неделю и получи свой
+                                заслуженный слот на <a class="underline-link" href="#">любое</a> российское соревнование.</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="leaders">
+                <div class="subtitle">Лидеры этой недели</div>
+
+                <div class="leaders__accordion">
+
+                    <div class="leaders__accordion-item">
+                        <input id="ac-1" name="accordion-1" type="radio" checked="">
+                        <label class="leaders__accordion-item-header" for="ac-1">
+                            <div class="leaders__item">
+                                <span class="js-leader-name">Иван Петров</span> - <span
+                                    class="js-leader-likes">580</span> лайков
+                            </div>
+                        </label>
+                        <div class="leaders__accordion-item-body">
+
+                            <div class="carousel-cards js-carousel-cards-1">
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Иван Петров</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Иван Петров</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Иван Петров</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Иван Петров</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Иван Петров</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaders__accordion-item">
+                        <input id="ac-2" name="accordion-1" type="radio">
+                        <label class="leaders__accordion-item-header" for="ac-2">
+                            <div class="leaders__item">
+                                <span class="js-leader-name">Маргарита Сидорова</span> - <span
+                                    class="js-leader-likes">340</span> лайков
+                            </div>
+                        </label>
+                        <div class="leaders__accordion-item-body">
+
+                            <div class="carousel-cards js-carousel-cards-2">
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Маргарита Сидорова</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Маргарита Сидорова</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Маргарита Сидорова</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Маргарита Сидорова</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Маргарита Сидорова</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaders__accordion-item">
+                        <input id="ac-3" name="accordion-1" type="radio">
+                        <label class="leaders__accordion-item-header" for="ac-3">
+                            <div class="leaders__item">
+                                <span class="js-leader-name">Семён Викторов</span> - <span
+                                    class="js-leader-likes">307</span> лайков
+                            </div>
+                        </label>
+                        <div class="leaders__accordion-item-body">
+
+                            <div class="carousel-cards js-carousel-cards-3">
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Семён Викторов</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Семён Викторов</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Семён Викторов</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Семён Викторов</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Семён Викторов</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaders__accordion-item">
+                        <input id="ac-4" name="accordion-1" type="radio">
+                        <label class="leaders__accordion-item-header" for="ac-4">
+                            <div class="leaders__item">
+                                <span class="js-leader-name">Фёдор Яковицкий</span> - <span
+                                    class="js-leader-likes">203</span> лайков
+                            </div>
+                        </label>
+                        <div class="leaders__accordion-item-body">
+
+                            <div class="carousel-cards js-carousel-cards-4">
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Фёдор Яковицкий</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Фёдор Яковицкий</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Фёдор Яковицкий</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Фёдор Яковицкий</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Фёдор Яковицкий</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leaders__accordion-item">
+                        <input id="ac-5" name="accordion-1" type="radio">
+                        <label class="leaders__accordion-item-header" for="ac-5">
+                            <div class="leaders__item">
+                                <span class="js-leader-name">Тамара Угловая</span> - <span
+                                    class="js-leader-likes">164</span> лайков
+                            </div>
+                        </label>
+                        <div class="leaders__accordion-item-body">
+
+                            <div class="carousel-cards js-carousel-cards-5">
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Тамара Угловая</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Тамара Угловая</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Тамара Угловая</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Тамара Угловая</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-cards__item">
+
+                                    <div class="carousel-cards__item-header">
+                                        <div class="carousel-cards__item-header__img">
+                                            <img src="img/user.png" alt="">
+                                        </div>
+                                        <div class="carousel-cards__item-header__text">
+                                            <div>Тамара Угловая</div>
+                                            <div>15.10.2016</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-cards__item-desc">
+                                        Эмоции первой в жизни железной дистанции IRONSTAR Sochi 2016...
+                                    </div>
+
+                                    <a href="#" class="carousel-cards__item-img">
+                                        <span class="carousel-cards__item-img-layer"></span>
+                                        <img src="img/img-2.png" alt="">
+                                        <div class="carousel-cards__item-img-content">
+                                            <span class="carousel-cards__item-img-content-title">IRONSTAR Sochi 2016</span>
+                                            <span class="carousel-cards__item-img-content-location">
+                                                <i class="carousel-cards__item-img-content-location-icons material-icons">flag</i>
+                                                Сочи, Россия
+                                            </span>
+                                            <span class="carousel-cards__item-img-content-date">
+                                                <i class="carousel-cards__item-img-content-date-icons material-icons">
+                                                    event</i>
+                                                Вс 15.09.2016
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <div class="carousel-cards__item-footer">
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                remove_red_eye</i> 412
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                favorite_border</i> 78
+                                        </span>
+                                        <span class="carousel-cards__item-footer-views">
+                                            <i class="carousel-cards__item-footer-views-icons material-icons">
+                                                chat_bubble_outline</i> 15
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" class="leaders__full-list">Полный список участников и лидеров</a>
+            </div>
+
+        </main>
+
+        <footer class="footer" >
+            <div class="footer-rules" id="rules">
+                <div class="footer-rules__title">Правила и ограничения:</div>
+                <ol class="footer-rules__list">
+                    <li class="footer-rules__list-item">Регистрация на соревнование должна быть открыта и оплата
+                        должна быть доступна в онлайне.</li>
+                    <li class="footer-rules__list-item">Стоимость слота не должна превышать 5000 руб. Мы оплачиваем
+                    только один слот и только целиком.</li>
+                    <li class="footer-rules__list-item">Мы не платим приз деньгами, борзыми щенками и как-то еще.
+                        Просто оплачиваем слот.</li>
+                </ol>
+            </div>
+        </footer>
+    </div>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.min.css">
+
+    <script src="js/libs.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+
+  </body>
+</html>
