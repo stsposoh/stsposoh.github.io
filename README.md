@@ -1,2 +1,2 @@
-# stsposoh.github.io
-Triit_test_Posokhov
+# https://stsposoh.github.io/
+Posokhov test project
